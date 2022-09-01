@@ -11,10 +11,11 @@ const Botao = (props: BotaoProps) =>{
     return (
     <>
     <Button variant='outlined' 
-    hidden={(props.modo == 'formulario') ? true : false}
-    size={(props.tamanho == 'big') ? 'large' : 'small'}
-    color={(props.modo == 'simples') ? 'primary' : 'secondary'} 
-    endIcon={props.icon}>{props.title}</Button>
+        hidden={(props.modo == 'formulario') ? true : false}
+        size={(props.tamanho == 'big') ? 'large' : 'small'}
+        color={(props.modo == 'simples') ? 'primary' : 'secondary'} 
+        endIcon={props.icon}>{props.title}
+    </Button>
     </>
     )
 }
